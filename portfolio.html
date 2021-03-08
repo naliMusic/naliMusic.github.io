@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Minh Nguyen</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+	
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="TemplateData_small/favicon.ico">
+    <link rel="stylesheet" href="TemplateData_small/style.css">
+  </head>
+  <body>
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#aboutme">About / CV</a></li>
+							<!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> -->
+							<li class="nav-item"><a class="nav-link" href="#portfolio">Audio Portfolio</a></li>
+							<li class="nav-item"><a class="nav-link" href="./research.html">Research</a></li>
+							<!-- <li class="nav-item submenu dropdown"> -->
+								<!-- <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" -->
+								 <!-- aria-expanded="false">Pages</a> -->
+								<!-- <ul class="dropdown-menu"> -->
+									<!-- <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li> -->
+									<!-- <li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li> -->
+								<!-- </ul> -->
+							<!-- </li> -->
+							<!-- <li class="nav-item submenu dropdown"> -->
+								<!-- <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" -->
+								 <!-- aria-expanded="false">Blog</a> -->
+								<!-- <ul class="dropdown-menu"> -->
+									<!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
+									<!-- <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li> -->
+								<!-- </ul> -->
+							<!-- </li> -->
+							<li class="nav-item"><a class="nav-link" href="./index.html#contactme">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+	<p></p>
+	<section class = "banner_area">
+		<br></br>
+		<br></br>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>AUDIO DEMO HIGHLIGHTS </h2>
+						<p>
+							Here is the summary of some of my work. <br> <a href="#forMore">Scroll down to "For More"</a> section for individual videos.
+						</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLt2S6SiGm-yhzh4d3j0p48Yb-GHd6UpJG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</section>
+
+	<!--================Start Portfolio Area =================-->
+	<section class="feature_area">
+		<div class="container">	
+			<div class="main-title text-center">
+				<h2>3D VIRTUAL SHOWROOM</h2>
+				<p>See my work in a 3D virtual spaceship environment below.<br>Due to the web-host limitation, this showroom demo only works on computer browser. There might be delays and limitation in audio's playback.</p>
+				<div class="row justify-content-center">
+				<div id="unity-container" class="unity-desktop">
+					<canvas id="unity-canvas"></canvas>
+					<div id="unity-loading-bar">
+					<div id="unity-logo"></div>
+						<div id="unity-progress-bar-empty">
+							<div id="unity-progress-bar-full"></div>
+						</div>
+					</div>
+					<div id="unity-footer">
+						<div id="unity-webgl-logo"></div>
+						<div id="unity-fullscreen-button"></div>
+						<div id="unity-build-title">3D Virtual ShowRoom | MINH NGUYEN</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+			<script>
+			  var buildUrl = "Build_small";
+			  var loaderUrl = buildUrl + "/Export_FINAL_with_MUTE.loader.js";
+			  var config = {
+				dataUrl: buildUrl + "/Export_FINAL_with_MUTE.data",
+				frameworkUrl: buildUrl + "/Export_FINAL_with_MUTE.framework.js",
+				codeUrl: buildUrl + "/Export_FINAL_with_MUTE.wasm",
+				streamingAssetsUrl: "StreamingAssets_small",
+				companyName: "DefaultCompany",
+				productName: "3DImportTest",
+				productVersion: "0.1",
+			  };
+
+			  var container = document.querySelector("#unity-container");
+			  var canvas = document.querySelector("#unity-canvas");
+			  var loadingBar = document.querySelector("#unity-loading-bar");
+			  var progressBarFull = document.querySelector("#unity-progress-bar-full");
+			  var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+
+			  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+				container.className = "unity-mobile";
+				config.devicePixelRatio = 1;
+			  } else {
+				canvas.style.width = "800px";
+				canvas.style.height = "500px";
+			  }
+			  loadingBar.style.display = "block";
+
+			  var script = document.createElement("script");
+			  script.src = loaderUrl;
+			  script.onload = () => {
+				createUnityInstance(canvas, config, (progress) => {
+				  progressBarFull.style.width = 100 * progress + "%";
+				}).then((unityInstance) => {
+				  loadingBar.style.display = "none";
+				  fullscreenButton.onclick = () => {
+					unityInstance.SetFullscreen(1);
+				  };
+				}).catch((message) => {
+				  alert(message);
+				});
+			  };
+			  document.body.appendChild(script);
+			</script>
+		
+		<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+		<section class="portfolio_area">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>For More
+						<!-- <br> -->
+							<!-- Recently done project </h2> -->
+					</div>
+				</div>
+			</div>
+			<div class="filters portfolio-filter" id="forMore">
+				<ul>
+					<li class="active" data-filter="*">All</li>
+					<li data-filter=".school">School Projects</li>
+					<li data-filter=".latest"> Latest</li>
+					<!-- <li data-filter=".following">following</li> -->
+					<!-- <li data-filter=".upcoming">upcoming</li> -->
+				</ul>
+			</div>
+	
+			<div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+					<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<iframe src="https://www.youtube.com/embed/A3dbqp-8xE8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="short_info">
+								<h4>Haunting Room</h4>
+								<p>Role: Sound designing & Music production. All the sounds in this demo are recorded & sampled using kitchen items.
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 all school latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<iframe src="https://www.youtube.com/embed/U-SePZSmack" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="short_info">
+								<h4>Le Building - Sound Replacement school project</h4>
+								<p>Role: Sound designing & editing for characters and crashing SFXs. Finding suitable music and editing. Audio mixing.
+								<br>I do not own the visual content.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 all school">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<!-- <img class="img-fluid w-100" src="img/portfolio/p3.jpg" alt=""> -->
+								<!-- <div class="overlay"></div> -->
+								<!-- <a href="img/portfolio/p3.jpg" class="img-gal"> -->
+									<!-- <div class="icon"> -->
+										<!-- <span class="lnr lnr-cross"></span> -->
+									<!-- </div> -->
+								<!-- </a> -->
+								<video width="351" height="150" poster="img/portfolio/starwars.jpg" controls controlsList="nodownload">
+								<source src="./videos/Starwars_lowquality.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="short_info">
+								<h4>Star Wars - Sound Replacement school project</h4>
+								<!-- <p>All the sounds in this demo are recorded & sampled using kitchen items.</p> -->
+								<p>Role: Music scoring, SFXs & ambience sound designing (excluding Chewie & BB8), VOs editing for all characters, Mixing & Mastering.
+								<br>I do not own the visual content.
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 all latest school">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<iframe class="img-fluid w-100"  src="https://www.youtube.com/embed/eKDNI6nujq4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<!-- <video class="img-fluid w-100" poster="img/portfolio/p2.jpg" width="351" height="395" controls controlsList="nodownload">
+								<source src="./videos/Heroscape_MIX_MinhNguyen_final.mov" type="video/mp4" />
+								</video> -->
+							</div>
+							<div class="short_info">
+								<h4>Heroscape Commercial</h4>
+								<p>Role: Edit & mixing audio (VOs, SFXs, and Music).
+								<br>School project at University of Washington.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 all latest school">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<!-- <img class="img-fluid w-100" src="img/portfolio/p1.jpg" alt=""> -->
+								<!-- <div class="overlay"></div> -->
+								<!-- <a href="img/portfolio/p1.jpg" class="img-gal"> -->
+									<!-- <div class="icon"> -->
+										<!-- <span class="lnr lnr-cross"></span> -->
+									<!-- </div> -->
+								<!-- </a> -->
+								<iframe class="img-fluid w-100" src="https://www.youtube.com/embed/nDi9b5N8VqQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="short_info">
+								<h4>UW Bothell</h4>
+								<p>Role: Editing & mixing audio (VOs, SFXs, and Music).
+								<br>School project at University of Washington.</p>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-lg-4 col-md-6 all school"> -->
+						<!-- <div class="portfolio_box"> -->
+							<!-- <div class="single_portfolio"> -->
+								<!-- <img class="img-fluid w-100" src="img/portfolio/p4.jpg" alt=""> -->
+								<!-- <div class="overlay"></div> -->
+								<!-- <a href="img/portfolio/p4.jpg" class="img-gal"> -->
+									<!-- <div class="icon"> -->
+										<!-- <span class="lnr lnr-cross"></span> -->
+									<!-- </div> -->
+								<!-- </a> -->
+							<!-- </div> -->
+							<!-- <div class="short_info"> -->
+								<!-- <h4><a href="portfolio-details.html">fourth air</a></h4> -->
+								<!-- <p>Animated, portfolio</p> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div class="col-lg-4 col-md-6 all following"> -->
+						<!-- <div class="portfolio_box"> -->
+							<!-- <div class="single_portfolio"> -->
+								<!-- <img class="img-fluid w-100" src="img/portfolio/p6.jpg" alt=""> -->
+								<!-- <div class="overlay"></div> -->
+								<!-- <a href="img/portfolio/p5.jpg" class="img-gal"> -->
+									<!-- <div class="icon"> -->
+										<!-- <span class="lnr lnr-cross"></span> -->
+									<!-- </div> -->
+								<!-- </a> -->
+							<!-- </div> -->
+							<!-- <div class="short_info"> -->
+								<!-- <h4><a href="portfolio-details.html">together sign</a></h4> -->
+								<!-- <p>Animated, portfolio</p> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div class="col-lg-4 col-md-6 all upcoming"> -->
+						<!-- <div class="portfolio_box"> -->
+							<!-- <div class="single_portfolio"> -->
+								<!-- <img class="img-fluid w-100" src="img/portfolio/p5.jpg" alt=""> -->
+								<!-- <div class="overlay"></div> -->
+								<!-- <a href="img/portfolio/p6.jpg" class="img-gal"> -->
+									<!-- <div class="icon"> -->
+										<!-- <span class="lnr lnr-cross"></span> -->
+									<!-- </div> -->
+								<!-- </a> -->
+							<!-- </div> -->
+							<!-- <div class="short_info"> -->
+								<!-- <h4><a href="portfolio-details.html">multiply fowl</a></h4> -->
+								<!-- <p>Animated, portfolio</p> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div class="col-lg-4 col-md-6 all upcoming following"> -->
+						<!-- <div class="portfolio_box"> -->
+							<!-- <div class="single_portfolio"> -->
+								<!-- <img class="img-fluid w-100" src="img/portfolio/p7.jpg" alt=""> -->
+								<!-- <div class="overlay"></div> -->
+								<!-- <a href="img/portfolio/p7.jpg" class="img-gal"> -->
+									<!-- <div class="icon"> -->
+										<!-- <span class="lnr lnr-cross"></span> -->
+									<!-- </div> -->
+								<!-- </a> -->
+							<!-- </div> -->
+							<!-- <div class="short_info"> -->
+								<!-- <h4><a href="portfolio-details.html">green heaven</a></h4> -->
+								<!-- <p>Animated, portfolio</p> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div class="col-lg-4 col-md-6 all following"> -->
+						<!-- <div class="portfolio_box"> -->
+							<!-- <div class="single_portfolio"> -->
+								<!-- <img class="img-fluid w-100" src="img/portfolio/p8.jpg" alt=""> -->
+								<!-- <div class="overlay"></div> -->
+								<!-- <a href="img/portfolio/p8.jpg" class="img-gal"> -->
+									<!-- <div class="icon"> -->
+										<!-- <span class="lnr lnr-cross"></span> -->
+									<!-- </div> -->
+								<!-- </a> -->
+							<!-- </div> -->
+							<!-- <div class="short_info"> -->
+								<!-- <h4>fly male</h4> -->
+								<!-- <p>Animated, portfolio</p> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div class="col-lg-4 col-md-6 all upcoming"> -->
+						<!-- <div class="portfolio_box"> -->
+							<!-- <div class="single_portfolio"> -->
+								<!-- <img class="img-fluid w-100" src="img/portfolio/p9.jpg" alt=""> -->
+								<!-- <div class="overlay"></div> -->
+								<!-- <a href="img/portfolio/p9.jpg" class="img-gal"> -->
+									<!-- <div class="icon"> -->
+										<!-- <span class="lnr lnr-cross"></span> -->
+									<!-- </div> -->
+								<!-- </a> -->
+							<!-- </div> -->
+							<!-- <div class="short_info"> -->
+								<!-- <h4><a href="portfolio-details.html">season face</a></h4> -->
+								<!-- <p>Animated, portfolio</p> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================Footer Area =================-->
+	<footer class="footer_area" id="contactme">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+							<h4>Contact & More Links</h4>
+						</div>
+						<div class="footer_social">
+							<a href="mailto:nali.minh.ng@gmail.com"><i class="fa fa-envelope"></i></a>
+							<a href="https://www.instagram.com/nali.minh/"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.youtube.com/channel/UC-6wVKmdr08_kt46AyRZ-Pg"><i class="fa fa-youtube"></i></a>
+							<a href="https://www.linkedin.com/in/minh0/"><i class="fa fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> nali MINH NGUYEN | All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+  </body>
+</html>
