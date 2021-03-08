@@ -114,48 +114,48 @@
 		</div>
 	</section>
 			<script>
-			  var buildUrl = "Build_small";
-			  var loaderUrl = buildUrl + "/Export_FINAL_with_MUTE.loader.js";
-			  var config = {
-				dataUrl: buildUrl + "/Export_FINAL_with_MUTE.data",
-				frameworkUrl: buildUrl + "/Export_FINAL_with_MUTE.framework.js",
-				codeUrl: buildUrl + "/Export_FINAL_with_MUTE.wasm",
-				streamingAssetsUrl: "StreamingAssets_small",
-				companyName: "DefaultCompany",
-				productName: "3DImportTest",
-				productVersion: "0.1",
-			  };
+			  var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/Export_FINAL_with_MUTE_Small.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/Export_FINAL_with_MUTE_Small.data",
+        frameworkUrl: buildUrl + "/Export_FINAL_with_MUTE_Small.framework.js",
+        codeUrl: buildUrl + "/Export_FINAL_with_MUTE_Small.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "3DImportTest",
+        productVersion: "0.1",
+      };
 
-			  var container = document.querySelector("#unity-container");
-			  var canvas = document.querySelector("#unity-canvas");
-			  var loadingBar = document.querySelector("#unity-loading-bar");
-			  var progressBarFull = document.querySelector("#unity-progress-bar-full");
-			  var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
 
-			  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-				container.className = "unity-mobile";
-				config.devicePixelRatio = 1;
-			  } else {
-				canvas.style.width = "800px";
-				canvas.style.height = "500px";
-			  }
-			  loadingBar.style.display = "block";
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        config.devicePixelRatio = 1;
+      } else {
+        canvas.style.width = "800px";
+        canvas.style.height = "500px";
+      }
+      loadingBar.style.display = "block";
 
-			  var script = document.createElement("script");
-			  script.src = loaderUrl;
-			  script.onload = () => {
-				createUnityInstance(canvas, config, (progress) => {
-				  progressBarFull.style.width = 100 * progress + "%";
-				}).then((unityInstance) => {
-				  loadingBar.style.display = "none";
-				  fullscreenButton.onclick = () => {
-					unityInstance.SetFullscreen(1);
-				  };
-				}).catch((message) => {
-				  alert(message);
-				});
-			  };
-			  document.body.appendChild(script);
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+          fullscreenButton.onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
 			</script>
 		
 		<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
